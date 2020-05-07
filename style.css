@@ -1,0 +1,107 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.app {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+header h1 {
+	margin: 50px 0px 50px 0px;
+	font-size: 40px;
+	text-align: center;
+}
+
+header p {
+	font-size: 15px;
+	text-align: center;
+}
+
+
+.visuals > div {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+.panels {
+	background-color: blue;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.panels > div {
+	height: 100px;
+	width: 100px;
+	flex: 1; 
+}
+
+.panel1 {
+	background: violet;
+}
+
+.panel2 {
+	background: darkorange;
+}
+
+.panel3 {
+	background: skyblue;
+}
+
+.panel4 {
+	background: brown;
+}
+
+.panel5 {
+	background: lightgreen;
+}
+
+.panel6 {
+	background: maroon;
+}
+
+@keyframes jump{
+	0% {
+		bottom: 0%;
+		left: 20%;
+	} 
+
+	50% {
+		bottom:50%;
+		left: 50%;
+	}
+
+	100% {
+		bottom: 0%;
+		left: 80%;
+	}
+}
+
+
+.visuals > div {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	position: absolute;
+	bottom: 0%;
+	left: 80%;
+
+}
